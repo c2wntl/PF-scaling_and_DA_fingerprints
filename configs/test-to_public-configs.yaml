@@ -1,0 +1,15 @@
+database:
+- 2dmd
+dataset:
+- all_density
+feature_set:
+# - vpa_divi_chem_hellinger_l1_pristine_cfid
+- vpa_divi_chem_hellinger_l1_pristine_alldist_cfid
+# - cfid
+# - chem_dist0_cfid
+model:
+  type:
+  - CatBoostRegressor
+target_column:
+- formation_energy_per_site
+# - homo_lumo_gap_min

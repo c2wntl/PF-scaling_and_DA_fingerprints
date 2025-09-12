@@ -1,0 +1,9 @@
+# This whole file is taken from the developer of 2DMD dataset.
+# Please visit https://github.com/AIRI-Institute/2DMD_at_a_Glance
+structure:
+  id: "_id"
+  descriptor_id: "descriptor_id"
+  unrelaxed: "initial_structure"
+  sparse_unrelaxed: "defect_representation"
+defect:
+  id: "_id"
