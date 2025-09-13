@@ -14,7 +14,7 @@ dependencies = [
     "matplotlib>=3.7.5",
     "mrmr-selection==0.2.8",
     "numpy==1.26.4",
-    "pandas==2.3.0",
+    "pandas==2.1.4",
     "pycaret>=2.2.2",
     "pymatgen===2025.2.18",
     "scikit-learn==1.4.2",
