@@ -1,9 +1,7 @@
-# PF-scaling and Defect-aware Structural Fingerprints
 The alternative representation for complex defects in 2D materials.
 
 This project is implemented in **Python >= 3.10.14**. Other dependencies are listed in the `pyproject.toml` file.
 
-## Quick Start
 To reproduce our work, we recommend using [`uv`](https://docs.astral.sh/uv/), a fast Python package manager. Install it with:
 ```bash
 $ pip install uv
@@ -140,5 +138,62 @@ In the `training_pipeline.py`, the `main_pipeline` function defines the complete
 > - `jml_density` (density)                       →    `jml_vpa` (VPA)  
 > - `jml_log_vpa` (logarithm of VPA)      →     `jml_density` (density)  
 >
-> Before analyzing the data please use `rename_cell_columns` method in `DataHandler.py` to correct them.
+> Before analyzing the data please use `rename_cell_columns` method in `DataHandler.py` to correct them. 
+> 
+   This labeling issue also explains why feature sets involving PF-scaling are named with the prefix `vpa`.
+
+---
+## Preparing the Dataset
+
+### Generating the Original CFID Dataset from Defect Structures
+
+To generate the baseline CFID:
+1. Download and unzip the dataset from 2DMD in `./dataset/database/
+
+2. Run `gen_baseline_cfid.py` in `./dataset/database/` to compute the CFID for each host–defect density individually.
+    
+3. Each host–defect density CFID will be stored as a `.csv` file in `./dataset/database/tmp_file/`.
+    
+4. These temporary files are then merged using `merge_tmp_data.py` into:
+    
+    - `2dmd-cfid-all_high_density.csv` (high density)
+        
+    - `2dmd-cfid-all_low_density.csv` (low density)  
+        Both located in `./dataset/raw/`.
+### Generating the CFID Dataset from Pristine Structure
+
+The pristine CFID, used for constructing the DA fingerprints, is generated from pristine structures in:  
+`./dataset/raw/pristine_structure_cif_file/`  
+using the script `gen_cfid_pristine_structure.py`.  
+The final output is stored as:  
+`./dataset/raw/2dmd-pristine_cfid-all_density.csv`
+
+---
+
+## Result Visualization
+
+To visualize the simulated results displayed in the article, download and unzip:
+
+- `results_2.zip`
+    
+- `results_2_tsne.zip`
+    
+
+to the root of this project, then explore the corresponding Jupyter notebooks in:  
+`./notebooks/`
+
+### Model Comparison
+
+Due to incompatibilities between **`pycaret` v3.3.2** and **`pymatgen v2025.2.18`**, the model comparison of the baseline CFID across various models is demonstrated in:
+
+- Notebook `0005`
+    
+- Notebook `0006`
+    
+
+in the `no-version-control` branch, which does not control the version of dependencies.
+
+---
+
+
 
