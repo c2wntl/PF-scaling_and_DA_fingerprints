@@ -1,0 +1,26 @@
+feature_set: {
+    'euclidean_cfid': '#1f77b4',          # normal blue
+    'euclidean_pristine_cfid': '#0d3d72', # dark blue
+    'pca_cfid': '#2ca02c',          # normal green
+    'best_pca':'#2ca02c',
+    'kernelpca_cfid': '#145214', # dark green
+    'cfid': '#9467bd',                    # purple
+    'hellinger_cfid': '#ff7f0e',                # normal orange
+    'hellinger_minmax_cfid': '#ff7f0e',                # normal orange
+    'hellinger_l2_cfid': '#ff7f0e',                # normal orange
+    'hellinger_l1_cfid': '#ff7f0e',                # normal orange
+    'hellinger_pristine_cfid': '#b34700',           # dark orange
+    'hellinger_pristine_minmax_cfid': '#b34700',                # normal orange
+    'hellinger_pristine_l2_cfid': '#b34700',                # normal orange
+    'hellinger_pristine_l1_cfid': '#b34700',                # normal orange
+    'kazeev': '#d62728',                    # red 
+    # 'reduced_kazeev': '#8c0f0f'           # dark red
+    'reduced_kazeev': '#1f77b4',           # dark red
+    'chem_dist0_cfid': 'deeppink',
+    'eo_chem_cfid': 'firebrick',
+    'vpa_divi_eo_chem_cfid': 'lightcoral',
+    'vpa_mult_eo_chem_cfid': 'lightcoral',
+    'vpa_subs_eo_chem_cfid': 'lightcoral'
+
+
+}

@@ -1,0 +1,92 @@
+database:
+- 2dmd
+dataset:
+- all_density
+feature_set:
+- vpa_divi_chem_tvd_l1_pristine_cfid
+- vpa_divi_chem_emd_l1_pristine_alldist_cfid
+- vpa_mult_chem_hellinger_l1_pristine_cfid
+# - vpa_divi_eo_chem_hellinger_l1_pristine_alldist_cfid
+- tvd_l1_pristine_alldist_cfid
+- vpa_mult_chem_cfid
+# - vpa_subs_eo_chem_emd_l1_pristine_cfid
+# - vpa_divi_chem_jsd_l1_pristine_alldist_cfid
+# - vpa_divi_eo_chem_tvd_l1_pristine_cfid
+# - vpa_divi_eo_chem_jsd_l1_pristine_cfid
+# - jsd_l1_pristine_alldist_cfid
+# - vpa_subs_eo_chem_cfid
+- vpa_mult_chem_hellinger_l1_pristine_alldist_cfid
+# - vpa_mult_eo_chem_hellinger_l1_pristine_alldist_cfid
+# - vpa_divi_eo_chem_cfid
+# - vpa_divi_eo_chem_tvd_l1_pristine_alldist_cfid
+# - vpa_mult_eo_chem_jsd_l1_pristine_cfid
+# - vpa_mult_chem_jsd_l1_pristine_alldist_cfid
+# - vpa_mult_chem_jsd_l1_pristine_cfid
+# - vpa_mult_eo_chem_tvd_l1_pristine_alldist_cfid
+# - vpa_subs_eo_chem_tvd_l1_pristine_cfid
+# - vpa_subs_eo_chem_tvd_l1_pristine_alldist_cfid
+- vpa_divi_chem_hellinger_l1_pristine_cfid
+- emd_l1_pristine_alldist_cfid
+# - vpa_subs_eo_chem_hellinger_l1_pristine_alldist_cfid
+# - vpa_mult_eo_chem_dist0_cfid
+# - vpa_subs_eo_chem_jsd_l1_pristine_alldist_cfid
+# - vpa_mult_eo_chem_tvd_l1_pristine_cfid
+# - vpa_divi_chem_jsd_l1_pristine_cfid
+# - eo_chem_cfid
+- tvd_l1_pristine_cfid
+# - eo_chem_jsd_l1_pristine_cfid
+- vpa_divi_chem_hellinger_l1_pristine_alldist_cfid
+- vpa_mult_chem_dist0_cfid
+# - vpa_divi_eo_chem_dist0_cfid
+# - vpa_subs_chem_jsd_l1_pristine_cfid
+- hellinger_l1_pristine_cfid
+- vpa_subs_chem_dist0_cfid
+- emd_l1_pristine_cfid
+- vpa_subs_chem_tvd_l1_pristine_cfid
+# - vpa_divi_eo_chem_emd_l1_pristine_alldist_cfid
+- vpa_subs_chem_hellinger_l1_pristine_cfid
+# - eo_chem_jsd_l1_pristine_alldist_cfid
+# - vpa_mult_eo_chem_jsd_l1_pristine_alldist_cfid
+- vpa_subs_chem_emd_l1_pristine_cfid
+# - jsd_l1_pristine_cfid
+- vpa_subs_chem_cfid
+# - vpa_mult_eo_chem_hellinger_l1_pristine_cfid
+# - vpa_divi_eo_chem_hellinger_l1_pristine_cfid
+- hellinger_l1_pristine_alldist_cfid
+- vpa_mult_chem_tvd_l1_pristine_cfid
+# - eo_chem_hellinger_l1_pristine_alldist_cfid
+- cfid
+# - eo_chem_hellinger_l1_pristine_cfid
+# - vpa_subs_eo_chem_hellinger_l1_pristine_cfid
+- vpa_divi_chem_tvd_l1_pristine_alldist_cfid
+- vpa_divi_chem_dist0_cfid
+# - vpa_mult_eo_chem_emd_l1_pristine_alldist_cfid
+- vpa_subs_chem_emd_l1_pristine_alldist_cfid
+- vpa_mult_chem_tvd_l1_pristine_alldist_cfid
+# - vpa_divi_eo_chem_emd_l1_pristine_cfid
+# - vpa_subs_eo_chem_emd_l1_pristine_alldist_cfid
+- chem_dist0_cfid
+# - eo_chem_tvd_l1_pristine_alldist_cfid
+- vpa_mult_chem_emd_l1_pristine_alldist_cfid
+# - eo_chem_emd_l1_pristine_cfid
+- vpa_subs_chem_hellinger_l1_pristine_alldist_cfid
+# - eo_chem_tvd_l1_pristine_cfid
+# - vpa_mult_eo_chem_cfid
+# - vpa_subs_eo_chem_dist0_cfid
+# - vpa_subs_eo_chem_jsd_l1_pristine_cfid
+- vpa_mult_chem_emd_l1_pristine_cfid
+# - vpa_mult_eo_chem_emd_l1_pristine_cfid
+# - eo_chem_emd_l1_pristine_alldist_cfid
+# - vpa_divi_eo_chem_jsd_l1_pristine_alldist_cfid
+# - vpa_subs_chem_jsd_l1_pristine_alldist_cfid
+- vpa_subs_chem_tvd_l1_pristine_alldist_cfid
+# - eo_chem_dist0_cfid
+- vpa_divi_chem_emd_l1_pristine_cfid
+- vpa_divi_chem_cfid
+model:
+  type:
+  - CatBoostRegressor
+target_column:
+- formation_energy_per_site
+- homo_lumo_gap_min
+# - formation_energy

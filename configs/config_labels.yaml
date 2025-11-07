@@ -1,0 +1,18 @@
+database: {'2dmd': '2DMD'}
+dataset: {'all_high_density': 'high density defects', 
+          'all_low_density':'low density defects',
+          'mos2_low_density': '$MoS_2$ low density defects',
+          'wse2_low_density': '$WSe_2$ low density defects'
+          }
+feature_set: {
+    'euclidean_cfid': 'Euclidean$^*$',
+    'euclidean_pristine_cfid': 'Euclidean',
+    'hellinger_cfid': 'Hellinger$^*$',
+    'hellinger_pristine_cfid': 'Hellinger',
+    'cfid': 'full CFID',
+    'pca_cfid': 'PCA',
+    'kernelpca_cfid': 'Kernel PCA',
+    'kazeev': 'N.Kazeev et al.',
+    'reduced_kazeev': 'N.Kazeev et al$.^†$'}
+target_column: {'homo_lumo_gap_min': 'HOMO-LUMO gap minimum',
+                  'formation_energy': 'formation energy'}
